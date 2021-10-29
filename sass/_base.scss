@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Quantico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap');
+* {
+ margin: 0;
+ padding: 0;
+}
+
+*,
+*::after,
+*::before {
+ box-sizing: inherit;
+}
+
+html {
+ box-sizing: border-box;
+ font-size: 62.5%;
+}
+
+body {
+ font-family: 'Source Sans Pro', sans-serif;
+}
+
+main {
+ @include borderTest;
+ @include flexCentered;
+ align-items: flex-start;
+}
+p,
+h1,
+h2,
+h3 {
+ @include borderTest;
+}
+header {
+ border: 1px solid limegreen;
+}
+
+section {
+ @include borderTest;
+}
+
+img {
+ @include borderTest;
+}
+
+h1,
+h2,
+h3 {
+ font-family: 'Quantico', sans-serif;
+}
+
+article.container {
+ height: 100vh;
+}
+
+ul > li {
+ list-style-type: none;
+}
+
+a {
+ text-decoration: none;
+}

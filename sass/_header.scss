@@ -1,0 +1,48 @@
+// @import url('https://fonts.googleapis.com/css2?family=Alumni+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans&family=Roboto:wght@300&display=swap');
+header.header {
+ width: 100%;
+ @include flexCentered;
+ position: fixed;
+ height: 6em;
+ div.logo {
+  //   border: $borderTest;
+  position: absolute;
+  left: 7%;
+  span.logo-text {
+   font-size: 2.5rem;
+   color: white;
+   margin-right: 0.6em;
+   //    font-weight: bold;
+   font-family: 'Alumni Sans', sans-serif;
+  }
+  @include flexCentered;
+  > img {
+   background-color: #79e2bd;
+   border-radius: 50%;
+   width: 4em;
+  }
+ }
+
+ nav {
+  justify-content: flex-end;
+  border: 1px solid green;
+  width: 17em;
+  position: absolute;
+  right: 6%;
+  font-size: 1.5rem;
+
+  ul {
+   @include flexCentered;
+   justify-content: space-between;
+  }
+
+  a {
+   color: rgb(233, 233, 233);
+   font-weight: 600;
+   letter-spacing: 1px;
+   font-size: 1.6rem;
+  }
+ }
+}

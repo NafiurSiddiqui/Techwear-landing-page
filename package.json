@@ -1,0 +1,24 @@
+{
+ "name": "c",
+ "version": "1.0.0",
+ "description": "",
+ "main": "index.js",
+ "scripts": {
+  "start": "parcel --open firefox index.html",
+  "build": "parcel build index.html --out-dir ./dist"
+ },
+ "repository": {
+  "type": "git",
+  "url": "git+https://github.com/TheHunter808/Techwear-landing-page.git"
+ },
+ "author": "Nafi",
+ "license": "ISC",
+ "bugs": {
+  "url": "https://github.com/TheHunter808/Techwear-landing-page/issues"
+ },
+ "homepage": "https://github.com/TheHunter808/Techwear-landing-page#readme",
+ "devDependencies": {
+  "@parcel/transformer-sass": "^2.0.0",
+  "parcel": "^2.0.0"
+ }
+}

@@ -1,0 +1,30 @@
+section.slide {
+ img.slide-cyberpunk {
+  width: 100%;
+ }
+
+ h1.slide-header {
+  position: absolute;
+  top: 3em;
+  left: 2vw;
+  font-size: 7vw;
+  color: #79e2bd;
+ }
+
+ article.slide-text-container {
+  color: whitesmoke;
+  position: absolute;
+  top: 40vh;
+  left: 3vw;
+  font-size: -3vw;
+  font-size: 1.3rem;
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+ }
+
+ p.slide-text-left,
+ p.slide-text-right {
+  width: 40%;
+ }
+}
