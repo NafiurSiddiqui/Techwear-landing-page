@@ -1,4 +1,87 @@
-footer {
- @include flexCentered;
- background-color: cadetblue;
-}
+// footer {
+//  @include flexCentered;
+//  background-color: rgba(95, 158, 160, 0.568);
+//  position: absolute;
+//  bottom: 0;
+//  height: 20vh;
+
+//  .left {
+//   width: 30%;
+
+//   div.btn-container {
+//    padding: 0.8em;
+//    display: flex;
+//   }
+//   div.play-btn {
+//    padding: 1em;
+//    background: #111;
+//    border-radius: 50%;
+//    display: flex;
+//    justify-content: center;
+//    align-content: center;
+//    align-items: center;
+//   }
+
+//   i.fas.fa-play {
+//    color: #e6e6e6;
+//    position: relative;
+//    left: 10%;
+//   }
+
+//   h5.play-text {
+//    font-size: 1.5rem;
+//    padding: 0.4em;
+//    color: #e6e6e6;
+//   }
+
+//   article.social-media {
+//    font-size: 1.3rem;
+//    display: flex;
+
+//    ul {
+//     @include flexCentered;
+//     flex-wrap: wrap;
+
+//     li {
+//      margin: 0 0.4em;
+//     }
+//     li > a {
+//      color: white;
+//      padding: 0.3em;
+//      border: $borderTest;
+//     }
+//    }
+//   }
+//  }
+
+//  .middle {
+//   width: 60em;
+//   display: flex;
+//   background: #fff;
+//   padding: 1em;
+
+//   h1.middle-pagenumber {
+//    font-size: 9rem;
+//   }
+//   &-text {
+//    padding: 2em;
+//    line-height: 1.6em;
+//    font-weight: 600;
+//    color: #1a1a1a;
+//   }
+
+//   &-header {
+//    font-size: 1.6rem;
+//    letter-spacing: 1px;
+//    margin-bottom: 0.3em;
+//    font-weight: bolder;
+//   }
+
+//   &-text__text {
+//    font-size: 1.2rem;
+//    letter-spacing: 1px;
+//    word-spacing: 1px;
+//    font-weight: 600;
+//   }
+//  }
+// }

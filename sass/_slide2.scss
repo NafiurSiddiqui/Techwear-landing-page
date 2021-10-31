@@ -1,0 +1,182 @@
+main {
+}
+
+.slide {
+ //  width: 80%;
+ @include flexCentered;
+ align-items: flex-start;
+ img.slide-cyberpunk {
+  width: 100%;
+  height: 100vh;
+  //   position: fixed;
+ }
+
+ &-primary {
+  width: 70%;
+  &__content-container {
+   display: grid;
+   grid-template-columns: 4fr 17em;
+   position: absolute;
+   top: 0;
+   width: 70%;
+   height: 100vh;
+  }
+  &__img-container {
+   height: 80vh;
+  }
+
+  &__content-container__text {
+   border: 1px solid blue;
+   left: 2%;
+   //   position: absolute;
+   //   top: 16.6em;
+   width: 50%;
+   align-self: center;
+  }
+
+  &__side-content__container {
+   display: inline-grid;
+  }
+  &__header {
+   //   position: absolute;
+   //   top: 3em;
+   //   left: 2vw;
+   font-size: 7vw;
+   color: #79e2bd;
+  }
+
+  &__text-container {
+   color: whitesmoke;
+   //   position: fixed;
+   //   top: 30vh;
+   //   left: 3vw;
+
+   display: flex;
+   justify-content: space-between;
+   //   width: 70%;
+   border: $borderTest;
+  }
+ }
+
+ p.slide-text-left,
+ p.slide-text-right {
+  width: 40%;
+  height: 10em;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  font-weight: bold;
+ }
+
+ &__side-header {
+  //   position: absolute;
+  //   top: 35px;
+  color: white;
+  right: 29%;
+  writing-mode: vertical-rl;
+
+  //   font-size: 3rem;
+  font-size: 2vw;
+ }
+
+ &__pagination {
+  //   position: absolute;
+  //   bottom: 26%;
+  border: 1px solid aliceblue;
+  width: 4em;
+  //   right: 27.4%;
+  font-size: 4.2rem;
+  background: rgb(10, 10, 10);
+  @include flexCentered;
+
+  &-left,
+  &-right {
+   padding: 0.2em 0.4em;
+   font-weight: bolder;
+   color: whitesmoke;
+  }
+ }
+
+ &-footer {
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+ }
+ &-footer__left {
+  width: 30%;
+
+  &__btn-container {
+   padding: 0.8em;
+   display: flex;
+  }
+  &__play-btn {
+   padding: 1em;
+   background: #111;
+   border-radius: 50%;
+   display: flex;
+   justify-content: center;
+   align-content: center;
+   align-items: center;
+  }
+
+  i.fas.fa-play {
+   color: #e6e6e6;
+   position: relative;
+   left: 10%;
+  }
+
+  &__play-text {
+   font-size: 1.5rem;
+   padding: 0.4em;
+   color: #e6e6e6;
+  }
+
+  &__social-media {
+   font-size: 1.3rem;
+   display: flex;
+
+   ul {
+    @include flexCentered;
+    flex-wrap: wrap;
+
+    li {
+     margin: 0 0.4em;
+    }
+    li > a {
+     color: white;
+     padding: 0.3em;
+     border: $borderTest;
+    }
+   }
+  }
+ }
+
+ &-footer__middle {
+  //   width: 60em;
+  display: flex;
+  background: #fff;
+  padding: 1em;
+
+  &-pagenumber {
+   font-size: 9rem;
+  }
+  &-text {
+   padding: 2em;
+   line-height: 1.6em;
+   font-weight: 600;
+   color: #1a1a1a;
+  }
+
+  &-header {
+   font-size: 1.6rem;
+   letter-spacing: 1px;
+   margin-bottom: 0.3em;
+   font-weight: bolder;
+  }
+
+  &-text__text {
+   font-size: 1.2rem;
+   letter-spacing: 1px;
+   word-spacing: 1px;
+   font-weight: 600;
+  }
+ }
+}

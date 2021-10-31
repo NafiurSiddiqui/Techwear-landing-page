@@ -1,0 +1,7 @@
+footer {
+ @include flexCentered;
+ background-color: rgba(95, 158, 160, 0.568);
+ position: absolute;
+ bottom: 0;
+ height: 20vh;
+}

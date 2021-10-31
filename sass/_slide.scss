@@ -1,30 +1,86 @@
-section.slide {
- img.slide-cyberpunk {
-  width: 100%;
- }
+// main {
+// }
 
- h1.slide-header {
-  position: absolute;
-  top: 3em;
-  left: 2vw;
-  font-size: 7vw;
-  color: #79e2bd;
- }
+// .slide {
+//  //  width: 80%;
+//  @include flexCentered;
+//  align-items: flex-start;
+//  img.slide-cyberpunk {
+//   width: 100%;
+//   height: 100vh;
+//   //   position: fixed;
+//  }
 
- article.slide-text-container {
-  color: whitesmoke;
-  position: absolute;
-  top: 40vh;
-  left: 3vw;
-  font-size: -3vw;
-  font-size: 1.3rem;
-  display: flex;
-  justify-content: space-between;
-  width: 50%;
- }
+//  &-primary {
+//   width: 70%;
 
- p.slide-text-left,
- p.slide-text-right {
-  width: 40%;
- }
-}
+//   &__img-container {
+//    height: 80vh;
+//   }
+//  }
+//  div.content-container-text {
+//   border: 1px solid blue;
+//   left: 2%;
+//   position: absolute;
+//   top: 16.6em;
+//   width: 50%;
+//  }
+
+//  h1.slide-header {
+//   //   position: absolute;
+//   //   top: 3em;
+//   //   left: 2vw;
+//   font-size: 7vw;
+//   color: #79e2bd;
+//  }
+
+//  article.slide-text-container {
+//   color: whitesmoke;
+//   //   position: fixed;
+//   //   top: 30vh;
+//   //   left: 3vw;
+
+//   display: flex;
+//   justify-content: space-between;
+//   //   width: 70%;
+//   border: $borderTest;
+//  }
+
+//  p.slide-text-left,
+//  p.slide-text-right {
+//   width: 40%;
+//   height: 10em;
+//   font-size: 1.5rem;
+//   letter-spacing: 1px;
+//   font-weight: bold;
+//  }
+
+//  &-side-header {
+//   position: absolute;
+//   top: 35px;
+//   color: white;
+//   right: 29%;
+//   writing-mode: vertical-rl;
+
+//   //   font-size: 3rem;
+//   font-size: 2vw;
+//  }
+
+//  .pagination {
+//   position: absolute;
+//   bottom: 26%;
+//   border: 1px solid aliceblue;
+//   width: 4em;
+//   right: 27.4%;
+//   font-size: 4.2rem;
+//   background: rgb(10, 10, 10);
+//   @include flexCentered;
+
+//   &-left,
+//   &-right {
+//    padding: 0.2em 0.4em;
+//    font-weight: bolder;
+//    color: whitesmoke;
+//   }
+//  }
+// }
