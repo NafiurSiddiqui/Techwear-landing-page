@@ -19,19 +19,21 @@ main {
    position: absolute;
    top: 0;
    width: 70%;
-   height: 100vh;
+   height: 80vh;
   }
   &__img-container {
    height: 80vh;
   }
 
   &__content-container__text {
-   border: 1px solid blue;
+   //    border: 1px solid blue;
    left: 2%;
    //   position: absolute;
    //   top: 16.6em;
-   width: 50%;
-   align-self: center;
+   width: 75%;
+   align-self: end;
+   margin-left: 3em;
+   margin-bottom: 7em;
   }
 
   &__side-content__container {
@@ -54,7 +56,7 @@ main {
    display: flex;
    justify-content: space-between;
    //   width: 70%;
-   border: $borderTest;
+   //    border: $borderTest;
   }
  }
 
@@ -67,26 +69,34 @@ main {
   font-weight: bold;
  }
 
- &__side-header {
+ &-side-header {
   //   position: absolute;
   //   top: 35px;
+  //   position: relative;
+  //   right: 0;
+  //   top: 1em;
   color: white;
   right: 29%;
   writing-mode: vertical-rl;
-
   //   font-size: 3rem;
   font-size: 2vw;
+  position: relative;
+  right: 0;
+  top: 1em;
+
+  &__header-date {
+   position: relative;
+   top: 1.9em;
+  }
  }
 
  &__pagination {
-  //   position: absolute;
-  //   bottom: 26%;
-  border: 1px solid aliceblue;
+  //   border: 1px solid aliceblue;
   width: 4em;
-  //   right: 27.4%;
   font-size: 4.2rem;
   background: rgb(10, 10, 10);
   @include flexCentered;
+  align-self: end;
 
   &-left,
   &-right {
@@ -99,9 +109,11 @@ main {
  &-footer {
   display: grid;
   grid-template-columns: 2fr 2fr;
+  height: 20vh;
  }
  &-footer__left {
-  width: 30%;
+  width: 100%;
+  margin-left: 3em;
 
   &__btn-container {
    padding: 0.8em;
@@ -143,7 +155,7 @@ main {
     li > a {
      color: white;
      padding: 0.3em;
-     border: $borderTest;
+     //  border: $borderTest;
     }
    }
   }
@@ -153,28 +165,29 @@ main {
   //   width: 60em;
   display: flex;
   background: #fff;
-  padding: 1em;
+  padding: 1em 1.8em;
+  height: 20vh;
 
   &-pagenumber {
    font-size: 9rem;
   }
   &-text {
-   padding: 2em;
+   padding: 0.7em 0.5em;
    line-height: 1.6em;
    font-weight: 600;
    color: #1a1a1a;
+   letter-spacing: 1px;
+   letter-spacing: 1px;
   }
 
   &-header {
-   font-size: 1.6rem;
-   letter-spacing: 1px;
+   font-size: 2rem;
    margin-bottom: 0.3em;
-   font-weight: bolder;
+   font-weight: bold;
   }
 
   &-text__text {
-   font-size: 1.2rem;
-   letter-spacing: 1px;
+   font-size: 1.5rem;
    word-spacing: 1px;
    font-weight: 600;
   }

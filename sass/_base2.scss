@@ -18,10 +18,11 @@ html {
 
 body {
  font-family: 'Source Sans Pro', sans-serif;
+ overflow: hidden;
 }
 
 main {
- @include borderTest;
+ //  @include borderTest;
  //  @include flexCentered;
  //  align-items: flex-start;
 }
@@ -29,18 +30,18 @@ p,
 h1,
 h2,
 h3 {
- @include borderTest;
+ //  @include borderTest;
 }
 header {
- border: 1px solid limegreen;
+ //  border: 1px solid limegreen;
 }
 
 section {
- @include borderTest;
+ //  @include borderTest;
 }
 
 img {
- @include borderTest;
+ //  @include borderTest;
 }
 
 h1,
