@@ -12,6 +12,7 @@
   />
   <link rel="shortcut icon" href="src/Logo-nav.svg" type="image/x-icon" />
   <link rel="stylesheet" href="sass/main.scss" />
+  <script defer src="js/nav.js"></script>
   <title>TEST</title>
  </head>
  <body>
@@ -21,13 +22,19 @@
      <span class="logo-text">TECHWEAR</span>
      <img src="src/Logo.svg" alt="logo" />
     </div>
-    <nav>
-     <ul class="nav-container">
+    <nav class="nav-container ">
+     <ul class="nav-container__link-container ">
       <li class="nav-link"><a href="#">Products</a></li>
       <li class="nav-link"><a href="#">About</a></li>
       <li class="nav-link"><a href="#">Contact</a></li>
      </ul>
     </nav>
+     <div class="mobile-nav ">
+         <img src="src/line1.svg" alt="angle-down arrow1" class="line1">
+         <img src="src/line1.svg" alt="angle-down arrow1" class="line2">
+         <img src="src/line1.svg" alt="angle-down arrow1" class="line3">
+     </div>
+     <div class="cross "></div>
    </header>
 
    <main>
@@ -36,7 +43,7 @@
    <section class="slide-primary">
     <div class="slide-primary__img-container">
           <img
-      src="src/bg.jpg"
+      src="src/cyberpunk-bg.png"
       alt="background image"
       class="slide-cyberpunk"
      />
@@ -65,10 +72,11 @@
 
      <div class="slide__pagination">
       <div class="slide__pagination-left">
-       <span><</span>
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
       </div>
       <div class="slide__pagination-right">
-       <span>></span>
+       <i class="fa fa-chevron-right" aria-hidden="true"></i>
+
       </div>
      </div>
     </div>
@@ -100,8 +108,7 @@
       <p class="slide-footer__middle-text__text">
        Techwear refers to clothing made from technical fabrics like, GORE-TEX,
        Primaloft nylon, Polartec fleece, designed to allow for water-resistance,
-       breathability, windproof and comfort. Techwear can also describe a
-       specific aesthetic inspired by cyberpunk culture and urban fashion.
+       breathability, windproof and comfort. 
       </p>
      </div>
     </section>

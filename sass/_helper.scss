@@ -22,26 +22,6 @@
 @mixin transition-fast {
  transition: all 200ms ease-in-out;
 }
-//background color
-$primary: #050b18;
 
-$color-heading: #fefefb;
-$color-para: #dfdfdf;
-$color-dark: rgb(22, 22, 22);
 $borderTest: 1px solid rgb(241, 31, 31);
-
-// font size
-
-$fontSize-h1: 4rem;
-$fontSize-h2: 2rem;
-$fontSize-h1-m: 3rem;
-$fontSize-mL: 2.5rem;
-$fontSize-Lm: 2.4rem;
-$fontSize-m: 2rem;
-$fontSize-Sm: 1.6rem;
-$fontSize-S: 1.4rem;
-$fontSize-SS: 1.2rem;
-
-// star color of the reviews
-
-$color-star: rgb(231, 198, 8);
+$hoverColor: #f9b9b7;

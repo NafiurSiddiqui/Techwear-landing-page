@@ -52,7 +52,7 @@ main {
    //   position: fixed;
    //   top: 30vh;
    //   left: 3vw;
-
+   line-height: 2.4em;
    display: flex;
    justify-content: space-between;
    //   width: 70%;
@@ -92,17 +92,26 @@ main {
 
  &__pagination {
   //   border: 1px solid aliceblue;
-  width: 4em;
-  font-size: 4.2rem;
+
   background: rgb(10, 10, 10);
   @include flexCentered;
   align-self: end;
-
+  font-size: 3rem;
+  width: 100%;
+  height: 2em;
   &-left,
   &-right {
-   padding: 0.2em 0.4em;
    font-weight: bolder;
    color: whitesmoke;
+   width: 2em;
+   height: 2em;
+   @include flexCentered;
+   &:hover {
+    background-color: rgb(36, 36, 36);
+   }
+   &:active {
+    font-size: 3.1rem;
+   }
   }
  }
 
@@ -144,6 +153,8 @@ main {
   &__social-media {
    font-size: 1.3rem;
    display: flex;
+   position: relative;
+   bottom: -4em;
 
    ul {
     @include flexCentered;
@@ -155,7 +166,11 @@ main {
     li > a {
      color: white;
      padding: 0.3em;
+     font-weight: bold;
      //  border: $borderTest;
+     &:hover {
+      color: $hoverColor;
+     }
     }
    }
   }
@@ -170,26 +185,31 @@ main {
 
   &-pagenumber {
    font-size: 9rem;
+   padding-top: 0.1em;
   }
   &-text {
-   padding: 0.7em 0.5em;
-   line-height: 1.6em;
-   font-weight: 600;
+   line-height: 1.8em;
    color: #1a1a1a;
    letter-spacing: 1px;
    letter-spacing: 1px;
+   padding: 1em;
   }
 
   &-header {
    font-size: 2rem;
-   margin-bottom: 0.3em;
+   margin-bottom: 0.5em;
    font-weight: bold;
   }
 
   &-text__text {
    font-size: 1.5rem;
-   word-spacing: 1px;
-   font-weight: 600;
+  }
+ }
+
+ @media screen and (max-width: 768px) {
+  section.slide-primary {
+   position: relative;
+   z-index: -1;
   }
  }
 }
