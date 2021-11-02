@@ -12,6 +12,7 @@
   />
   <link rel="shortcut icon" href="src/Logo-nav.svg" type="image/x-icon" />
   <link rel="stylesheet" href="sass/main.scss" />
+  <script defer src="js/nav.js"></script>
   <title>Techwear</title>
  </head>
  <body>
@@ -21,13 +22,19 @@
      <span class="logo-text">TECHWEAR</span>
      <img src="src/Logo.svg" alt="logo" />
     </div>
-    <nav>
-     <ul class="nav-container">
+    <nav class="nav-container ">
+     <ul class="nav-container__link-container ">
       <li class="nav-link"><a href="#">Products</a></li>
       <li class="nav-link"><a href="#">About</a></li>
       <li class="nav-link"><a href="#">Contact</a></li>
      </ul>
     </nav>
+     <div class="mobile-nav ">
+         <img src="src/line1.svg" alt="angle-down arrow1" class="line1">
+         <img src="src/line1.svg" alt="angle-down arrow1" class="line2">
+         <img src="src/line1.svg" alt="angle-down arrow1" class="line3">
+     </div>
+     <div class="cross "></div>
    </header>
 
    <main>
@@ -36,14 +43,15 @@
    <section class="slide-primary">
     <div class="slide-primary__img-container">
           <img
-      src="src/cyberpunk-bg.png"
+      src="src/cyberpunk-bg-person.png"
       alt="background image"
       class="slide-cyberpunk"
      />
     </div>
-    <div class="content-container-text">
-         <h1 class="slide-header">CYBERPUNK</h1>
-     <article class="slide-text-container">        
+   <div class="slide-primary__content-container">
+        <div class="slide-primary__content-container__text">
+         <h1 class="slide-primary__header">CYBERPUNK</h1>
+     <article class="slide-primary__text-container">        
      <p class="slide-text-left">
       Techwear aesthetic is heavily influenced by futuristic genres such as
       cyberpunk and urban fashion.
@@ -56,48 +64,34 @@
      </article>
     </div>
 
-     <article class="slide-side-header">
+    <div class="slide-primary__side-content__container">
+         <article class="slide-side-header">
       <h2 class="slide-side-header__header">TECHWEAR</h2>
       <h2 class="slide-side-header__header-date">2020/21</h2>
      </article>
 
-     <div class="pagination">
-      <div class="pagination-left">
-       <span><</span>
+     <div class="slide__pagination">
+      <div class="slide__pagination-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
       </div>
-      <div class="pagination-right">
-       <span>></span>
+      <div class="slide__pagination-right">
+       <i class="fa fa-chevron-right" aria-hidden="true"></i>
+
       </div>
      </div>
-    </section>
-    <aside class="side-slide">
-     <img
-      src="src/cyberpunk-side.png"
-      alt="background image side"
-      class="side-slide__cyberpunk"
-     />
-     <h2 class="side-slide-heading">TACTICAL M800</h2>
+    </div>
+   </div>
 
-     <div class="pagination-tracker">
-      <div class="dot A"></div>
-      <div class="dot B"></div>
-      <div class="dot C"></div>
-     </div>
-    </aside>
-   </article>
-
-  
-   </main>
-    <footer>
-    <section class="left">
-     <div class="btn-container">
-      <div class="play-btn">
+   <div class="slide-footer">
+          <section class="slide-footer__left">
+     <div class="slide-footer__left__btn-container">
+      <div class="slide-footer__left__play-btn">
        <i class="fas fa-play"></i>
       </div>
-      <h5 class="play-text">Lookbook</h5>
+      <h5 class="slide-footer__left__play-text">Lookbook</h5>
      </div>
 
-     <article class="social-media">
+     <article class="slide-footer__left__social-media">
       <ul>
        <li><a href="#">Facebook</a></li>
        <li><a href="#">Instagram</a></li>
@@ -106,27 +100,75 @@
      </article>
     </section>
 
-    <section class="middle">
-     <h1 class="middle-pagenumber">01</h1>
+    <section class="slide-footer__middle">
+     <h1 class="slide-footer__middle-pagenumber">01</h1>
 
-     <div class="middle-text">
-      <h5 class="middle-header">Techwear</h5>
-      <p class="middle-text__text">
+     <div class="slide-footer__middle-text">
+      <h5 class="slide-footer__middle-header">Techwear</h5>
+      <p class="slide-footer__middle-text__text">
        Techwear refers to clothing made from technical fabrics like, GORE-TEX,
        Primaloft nylon, Polartec fleece, designed to allow for water-resistance,
-       breathability, windproof and comfort. Techwear can also describe a
-       specific aesthetic inspired by cyberpunk culture and urban fashion.
+       breathability, windproof and comfort. 
       </p>
      </div>
     </section>
+   </div>
 
-    <section class="right">
-     <h5 class="right-header">Inspired by The Matrix</h5>
-     <p class="right-text">
+    </section>
+
+
+
+   <section class="side-slide__container">
+             
+     <aside class="side-slide__content">
+     <div class="side-slide__img-container">
+          <img
+      src="src/cyberpunk-side.png"
+      alt="background image side"
+      class="side-slide__content__cyberpunk"
+     />
+         
+     </div>
+     <h2 class="side-slide__content__heading">TACTICAL M800</h2>
+  <!-- social media for small screen -->
+ <section class="side-slide__social-media">
+     <article class="side-slide__social-media__container">
+      <ul>
+       <li>
+           <a href="#">Facebook</a>
+        </li>
+       <li><a href="#">Instagram</a></li>
+       <li><a href="#">Twitter</a></li>
+      </ul>
+     </article>
+    </section>
+
+
+      <div class="side-slide__content__pagination-tracker">
+      <div class="dot A dot-active"></div>
+      <div class="dot B"></div>
+      <div class="dot C"></div>
+     </div>
+
+   
+    </aside>
+     <section class="side-slide__content__footer">
+     <h5 class="side-slide__content__footer-header">Inspired by The Matrix</h5>
+     <p class="side-slide__content__footer-text">
       Every kid grow up watching The Matrix and other cyberpunk genres dream
       came true.Time to put on the apparels of the future cyberpunks.
      </p>
-    </section>
+    </section> 
+   </section> 
+
+   </article>
+
+  
+   </main>
+    <footer>
+   
+
+   
    </footer>
  
   </article>

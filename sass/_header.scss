@@ -4,6 +4,7 @@
 header.header {
  position: relative;
  width: 100%;
+ z-index: 1;
  @include flexCentered;
  position: fixed;
  height: 6em;
@@ -29,11 +30,21 @@ header.header {
  nav {
   justify-content: flex-end;
   //   border: $borderTest;
-  width: 17em;
+  //   width: 17em;
+  width: 21%;
   position: absolute;
-  right: 11%;
-  font-size: 1.5rem;
+  //   right: 5%;
+  right: calc(9% / 2);
+  //   font-size: 1.5rem;
 
+  @media screen and (max-width: 1072px) {
+   //    right: calc(4% / 2);
+   right: 2%;
+   width: 25%;
+   ul > li > a {
+    font-size: 1.5vw !important;
+   }
+  }
   ul {
    @include flexCentered;
    justify-content: space-between;
@@ -214,7 +225,7 @@ header.header {
   }
  }
 
- @media screen and (max-width: 768px) {
+ @media screen and (max-width: 788px) {
   .mobile-nav {
    @include flexCentered;
   }
