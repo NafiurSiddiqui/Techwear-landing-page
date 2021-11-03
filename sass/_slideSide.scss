@@ -87,16 +87,14 @@
   &__container {
    border: $borderTest;
    font-size: 1.3rem;
-   display: flex;
-
+   //    display: flex;
+   display: none;
    position: fixed;
-   bottom: 27em;
+   bottom: 20em;
    left: 0;
-   width: 88%;
-   height: 6vh;
    z-index: 1;
    ul {
-    @include flexCentered;
+    // @include flexCentered;
     flex-direction: column;
     // flex-wrap: wrap;
 
