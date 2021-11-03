@@ -1,119 +1,121 @@
-.side-slide__container {
- width: 30%;
- position: relative;
- //  z-index: -100;
-}
-
-.side-slide__img-container {
- width: 100%;
- & > img {
+.side-slide {
+ &__container {
+  width: 30%;
   position: relative;
-  //   z-index: -200;
+  //  z-index: -100;
+ }
+
+ &__img-container {
   width: 100%;
-  top: 6em;
- }
-}
-.side-slide__content {
- //  border: $borderTest;
- @include flexCentered;
- height: 78vh;
- //  background: linear-gradient(
- //   180deg,
- //   rgba(1, 66, 42, 0.93) 20.73%,
- //   #003321 64.06%,
- //   rgba(0, 44, 28, 0.87) 69.35%,
- //   rgba(1, 56, 37, 0.82) 75.12%,
- //   rgba(20, 77, 56, 0.83) 87.9%
- //  );
- background: linear-gradient(
-  180deg,
-  rgba(69, 124, 104, 0.93) 20.73%,
-  #2b5848 64.06%,
-  rgba(1, 55, 35, 0.87) 69.35%,
-  rgba(1, 56, 37, 0.82) 75.12%,
-  rgba(20, 77, 56, 0.83) 87.9%
- );
- //  position: relative;
- //  z-index: -200;
-
- &__heading {
-  position: absolute;
-  top: 32%;
-
-  color: white;
-  font-size: 3vw;
+  & > img {
+   position: relative;
+   //   z-index: -200;
+   width: 100%;
+   top: 6em;
+  }
  }
 
- &__pagination-tracker {
+ &__content {
+  //  border: $borderTest;
   @include flexCentered;
-  //   justify-content: flex-end;
-  padding: 1em;
-  position: absolute;
-  bottom: 1em;
-  right: 1%;
-  .dot {
-   width: 15px;
-   height: 15px;
-   background-color: #fbfbfb;
-   opacity: 0.5;
-   border-radius: 50%;
-   margin: 0 0.6em;
+  height: 78vh;
+  //  background: linear-gradient(
+  //   180deg,
+  //   rgba(1, 66, 42, 0.93) 20.73%,
+  //   #003321 64.06%,
+  //   rgba(0, 44, 28, 0.87) 69.35%,
+  //   rgba(1, 56, 37, 0.82) 75.12%,
+  //   rgba(20, 77, 56, 0.83) 87.9%
+  //  );
+  background: linear-gradient(
+   180deg,
+   rgba(69, 124, 104, 0.93) 20.73%,
+   #2b5848 64.06%,
+   rgba(1, 55, 35, 0.87) 69.35%,
+   rgba(1, 56, 37, 0.82) 75.12%,
+   rgba(20, 77, 56, 0.83) 87.9%
+  );
+  //  position: relative;
+  //  z-index: -200;
+
+  &__heading {
+   position: absolute;
+   top: 32%;
+
+   color: white;
+   font-size: 3vw;
   }
 
-  .dot-active {
-   opacity: 1;
+  &__pagination-tracker {
+   @include flexCentered;
+   //   justify-content: flex-end;
+   padding: 1em;
+   position: absolute;
+   bottom: 1em;
+   right: 1%;
+   .dot {
+    width: 15px;
+    height: 15px;
+    background-color: #fbfbfb;
+    opacity: 0.5;
+    border-radius: 50%;
+    margin: 0 0.6em;
+   }
+
+   .dot-active {
+    opacity: 1;
+   }
   }
- }
 
- &__footer {
-  height: 23vh;
-  background: black;
-  color: white;
-  letter-spacing: 1px;
-  padding: 2em;
-  line-height: 1.8em;
-  position: relative;
-  &-header {
-   font-size: 2rem;
-   margin-bottom: 0.4em;
+  &__footer {
+   height: 23vh;
+   background: black;
+   color: white;
+   letter-spacing: 1px;
+   padding: 2em;
+   line-height: 1.8em;
+   position: relative;
+   &-header {
+    font-size: 2rem;
+    margin-bottom: 0.4em;
+   }
+
+   &-text {
+    font-size: 1.4rem;
+   }
   }
 
-  &-text {
-   font-size: 1.4rem;
-  }
- }
+  .side-slide__social-media {
+   &__container {
+    border: $borderTest;
+    font-size: 1.3rem;
+    //    display: flex;
+    display: none;
+    position: fixed;
+    bottom: 20em;
+    left: 0;
+    z-index: 1;
+    ul {
+     // @include flexCentered;
+     flex-direction: column;
+     // flex-wrap: wrap;
 
- .side-slide__social-media {
-  &__container {
-   border: $borderTest;
-   font-size: 1.3rem;
-   //    display: flex;
-   display: none;
-   position: fixed;
-   bottom: 20em;
-   left: 0;
-   z-index: 1;
-   ul {
-    // @include flexCentered;
-    flex-direction: column;
-    // flex-wrap: wrap;
+     li {
+      margin: 0 0.4em;
+     }
+     li > a {
+      color: white;
+      padding: 0.3em;
+      font-weight: bold;
+      writing-mode: vertical-rl;
+      text-orientation: upright;
+      padding: 1em 0;
+      position: relative;
 
-    li {
-     margin: 0 0.4em;
-    }
-    li > a {
-     color: white;
-     padding: 0.3em;
-     font-weight: bold;
-     writing-mode: vertical-rl;
-     text-orientation: upright;
-     padding: 1em;
-     position: relative;
-     z-index: 400;
-
-     border: $borderTest;
-     &:hover {
-      color: $hoverColor;
+      border: $borderTest;
+      &:hover {
+       color: $hoverColor;
+      }
      }
     }
    }
