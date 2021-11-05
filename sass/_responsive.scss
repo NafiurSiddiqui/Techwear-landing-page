@@ -26,16 +26,25 @@
     line-height: 40px;
    }
   }
-
+  &-footer {
+   width: 100% !important;
+   height: 20vh;
+  }
   &-footer__middle {
    &-text {
     padding: 1em;
    }
   }
  }
+ .slide-primary__img-techguy {
+  right: -100%;
+ }
 
  .side-slide__container {
   width: 100%;
+ }
+ div.side-slide__img-techguy {
+  right: -100% !important;
  }
  .side-slide__content {
   height: 100%;

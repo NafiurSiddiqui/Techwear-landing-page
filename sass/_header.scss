@@ -251,6 +251,10 @@ header.header {
 
    & > li {
     display: inline-block;
+    // font-size: 1.3rem;
+    > a {
+     font-size: 3vw !important;
+    }
    }
   }
  }
