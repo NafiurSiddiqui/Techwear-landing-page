@@ -1,0 +1,235 @@
+// slide animation
+
+.slidePrimeBG {
+ animation-name: slidePrimeBG;
+ animation-duration: 15s;
+ animation-timing-function: ease-in-out;
+ //  animation-delay: 10s;
+ animation-iteration-count: infinite;
+ animation-direction: alternate;
+}
+
+@keyframes slidePrimeBG {
+ 0% {
+  transform: translateX(0vw);
+ }
+ 10% {
+  transform: translateX(0vw);
+ }
+ 20% {
+  transform: translateX(0vw);
+ }
+ 50% {
+  transform: translateX(-100vw);
+ }
+ 60% {
+  transform: translateX(-100vw);
+ }
+ 70% {
+  transform: translateX(-100vw);
+ }
+ 80% {
+  transform: translateX(-100vw);
+ }
+ 90% {
+  transform: translateX(0vw);
+ }
+ 100% {
+  transform: translateX(0vw);
+ }
+}
+
+.slideSideBG {
+ animation-name: slideSideBG;
+ animation-duration: 15s;
+ animation-timing-function: ease-in-out;
+ //  animation-delay: 10s;
+ animation-iteration-count: infinite;
+ animation-direction: alternate;
+}
+
+@keyframes slideSideBG {
+ 0% {
+  transform: translateX(0vw);
+ }
+ 10% {
+  transform: translateX(0vw);
+ }
+ 20% {
+  transform: translateX(0vw);
+ }
+ 50% {
+  transform: translateX(-30vw);
+ }
+ 60% {
+  transform: translateX(-30vw);
+ }
+ 70% {
+  transform: translateX(-30vw);
+ }
+ 80% {
+  transform: translateX(-30vw);
+ }
+ 90% {
+  transform: translateX(0vw);
+ }
+ 100% {
+  transform: translateX(0vw);
+ }
+}
+
+.slidePageNumber {
+ animation-name: slidePageNumber;
+ animation-duration: 15s;
+ animation-timing-function: ease-in-out;
+ //  animation-delay: 10s;
+ animation-iteration-count: infinite;
+ animation-direction: alternate;
+
+ @keyframes slidePageNumber {
+  0% {
+   transform: translateY(0vh);
+  }
+  10% {
+   transform: translateY(0vh);
+  }
+  20% {
+   transform: translateY(0vh);
+  }
+  50% {
+   transform: translateY(-17vh);
+  }
+  60% {
+   transform: translateY(-17vh);
+  }
+  70% {
+   transform: translateY(-17vh);
+  }
+  80% {
+   transform: translateY(-17vh);
+  }
+  90% {
+   transform: translateY(0vh);
+  }
+  100% {
+   transform: translateY(0vh);
+  }
+ }
+}
+
+.activeDotA {
+ animation-name: activeDotA;
+ animation-duration: 15s;
+ animation-timing-function: ease-in-out;
+ //  animation-delay: 10s;
+ animation-iteration-count: infinite;
+ animation-direction: alternate;
+}
+
+@keyframes activeDotA {
+ 0% {
+  opacity: 1;
+ }
+ 10% {
+  opacity: 1;
+ }
+ 20% {
+  opacity: 1;
+ }
+ 50% {
+  opacity: 0.3;
+ }
+ 60% {
+  opacity: 0.3;
+ }
+ 70% {
+  opacity: 0.3;
+ }
+ 80% {
+  opacity: 0.3;
+ }
+ 90% {
+  opacity: 1;
+ }
+ 100% {
+  opacity: 1;
+ }
+}
+
+.activeDotB {
+ animation-name: activeDotB;
+ animation-duration: 15s;
+ animation-timing-function: ease-in-out;
+ //  animation-delay: 10s;
+ animation-iteration-count: infinite;
+ animation-direction: alternate;
+}
+
+@keyframes activeDotB {
+ 0% {
+  opacity: 0.3;
+ }
+ 10% {
+  opacity: 0.3;
+ }
+ 20% {
+  opacity: 0.3;
+ }
+ 50% {
+  opacity: 1;
+ }
+ 60% {
+  opacity: 1;
+ }
+ 70% {
+  opacity: 1;
+ }
+ 80% {
+  opacity: 1;
+ }
+ 90% {
+  opacity: 0.3;
+ }
+ 100% {
+  opacity: 0.3;
+ }
+}
+
+.techwear-logo {
+ animation-name: techwearLogo;
+ animation-duration: 15s;
+ animation-timing-function: ease-in-out;
+ //  animation-delay: 10s;
+ animation-iteration-count: infinite;
+ animation-direction: alternate;
+}
+
+@keyframes techwearLogo {
+ 0% {
+  background-color: #79e2bd;
+ }
+ 10% {
+  background-color: #79e2bd;
+ }
+ 20% {
+  background-color: #79e2bd;
+ }
+ 50% {
+  background-color: #c54820;
+ }
+ 60% {
+  background-color: #c54820;
+ }
+ 70% {
+  background-color: #c54820;
+ }
+ 80% {
+  background-color: #c54820;
+ }
+ 90% {
+  background-color: #79e2bd;
+ }
+ 100% {
+  background-color: #79e2bd;
+ }
+}
