@@ -20,16 +20,16 @@
   transform: translateX(0vw);
  }
  50% {
-  transform: translateX(-100vw);
+  transform: translateX(-100%);
  }
  60% {
-  transform: translateX(-100vw);
+  transform: translateX(-100%);
  }
  70% {
-  transform: translateX(-100vw);
+  transform: translateX(-100%);
  }
  80% {
-  transform: translateX(-100vw);
+  transform: translateX(-100%);
  }
  90% {
   transform: translateX(0vw);
@@ -59,16 +59,16 @@
   transform: translateX(0vw);
  }
  50% {
-  transform: translateX(-30vw);
+  transform: translateX(-100%);
  }
  60% {
-  transform: translateX(-30vw);
+  transform: translateX(-100%);
  }
  70% {
-  transform: translateX(-30vw);
+  transform: translateX(-100%);
  }
  80% {
-  transform: translateX(-30vw);
+  transform: translateX(-100%);
  }
  90% {
   transform: translateX(0vw);
@@ -78,7 +78,8 @@
  }
 }
 
-.slidePageNumber {
+.slidePageNumber,
+.slidePageNumber.pageTwo {
  animation-name: slidePageNumber;
  animation-duration: 15s;
  animation-timing-function: ease-in-out;
@@ -97,16 +98,16 @@
    transform: translateY(0vh);
   }
   50% {
-   transform: translateY(-17vh);
+   transform: translateY(-100%);
   }
   60% {
-   transform: translateY(-17vh);
+   transform: translateY(-100%);
   }
   70% {
-   transform: translateY(-17vh);
+   transform: translateY(-100%);
   }
   80% {
-   transform: translateY(-17vh);
+   transform: translateY(-100%);
   }
   90% {
    transform: translateY(0vh);

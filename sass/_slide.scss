@@ -76,8 +76,8 @@
    //   top: 16.6em;
    width: 75%;
    align-self: end;
-   margin-left: 3em;
-   margin-bottom: 7em;
+   margin-left: 5vw;
+   margin-bottom: 11em;
   }
 
   &__side-content__container {
@@ -88,10 +88,11 @@
    //   top: 3em;
    //   left: 2vw;
    position: absolute;
-   top: 2.4em;
-   margin-left: 3rem;
+   //    top: 1.9em;
+   margin-left: 5%;
    font-size: 7vw;
    color: #79e2bd;
+   margin-top: -73vh;
   }
 
   .techwear-header {
@@ -123,7 +124,7 @@
    position: relative;
    right: 10%;
    top: 1em;
-   line-height: 30px;
+   line-height: 3vw;
    letter-spacing: -1px;
    &-date {
     position: relative;
@@ -164,15 +165,23 @@
     font-size: 3.1rem;
    }
   }
+  i.fa {
+   &:hover {
+    background-color: rgb(36, 36, 36);
+   }
+   &:active {
+    font-size: 3.1rem;
+   }
+  }
  }
 
  &-footer {
   display: grid;
   grid-template-columns: 2fr 2fr;
   height: 22vh;
-  position: absolute;
-  bottom: 0em;
-  width: 70%;
+  position: relative;
+  bottom: 22%;
+  //   width: 70%;
  }
  &-footer__left {
   width: 100%;
@@ -250,6 +259,11 @@
   &-pagenumber {
    font-size: 9rem;
    padding-top: 0.1em;
+
+   &.pageTwo {
+    // display: none;
+    margin-top: 6vh;
+   }
   }
   &-text {
    line-height: 1.8em;
@@ -276,43 +290,5 @@
    position: relative;
    z-index: 2;
   }
- }
-
- @media screen and (max-width: 1230px) {
-  .slide-footer {
-   grid-template-columns: 2fr 3fr;
-  }
-  .slide-primary__content-container {
-   grid-template-columns: 4fr 1fr;
-  }
-  .slide-primary__content-container__text {
-   width: 90%;
-   margin-bottom: 13em;
-  }
-  .slide-primary__text-container {
-   justify-content: center;
-  }
-  .slide-text-left {
-   margin-right: 3em;
-   margin-left: -4em;
-  }
- }
-
- @media screen and (max-width: 1012px) {
-  .slide-footer__middle-text {
-   padding: 0.7em;
-  }
- }
- @media screen and (max-width: 900px) {
-  .slide-footer__middle {
-   padding: 1em;
-   &-text {
-    padding: 0.5em;
-   }
-  }
-
-  //    .slide .slide-footer__middle-text {
-  //     padding: 0.5em;
-  //    }
  }
 }

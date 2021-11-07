@@ -71,7 +71,7 @@
 
   &__heading {
    position: absolute;
-   top: 32%;
+   top: 40%;
    color: white;
    font-size: 3vw;
    left: 30%;
@@ -80,9 +80,8 @@
 
   .techwear-side-heading {
    position: absolute;
-   top: 32%;
+   top: 40%;
    color: white;
-   font-size: 3vw;
    left: 23%;
   }
   &__pagination-tracker {
@@ -127,7 +126,7 @@
 
   .side-slide__social-media {
    &__container {
-    border: $borderTest;
+    // border: $borderTest;
     font-size: 1.3rem;
     //    display: flex;
     display: none;
@@ -149,10 +148,11 @@
       font-weight: bold;
       writing-mode: vertical-rl;
       text-orientation: upright;
+      -webkit-text-orientation: upright;
       padding: 1em 0;
       position: relative;
 
-      border: $borderTest;
+      //   border: $borderTest;
       &:hover {
        color: $hoverColor;
       }
