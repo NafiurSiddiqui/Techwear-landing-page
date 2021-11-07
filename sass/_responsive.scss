@@ -44,6 +44,14 @@
   margin-right: 3em;
   margin-left: -5vw;
  }
+
+ .slide-footer__middle-text__text {
+  font-size: 1.5vh;
+ }
+ .side-slide__img-container .side-slide__img-cyberpunk > img,
+ .side-slide__img-container .side-slide__img-techguy > img {
+  top: 18vh;
+ }
 }
 
 @media screen and (max-width: 788px) {
@@ -181,7 +189,7 @@
   background-size: cover;
  }
  .slide-primary__img-techguy {
-  background: url('../src/techguy-bg-mobile.png') center;
+  background: url('../src/techguy-bg-mobile.png') center center;
   background-size: cover;
   height: 135vh;
 
